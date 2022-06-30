@@ -37,6 +37,8 @@ class _MyAppState extends State<MyApp> {
                 builder: (context, value, _) {
                   // Create theme instance
                   return MaterialApp.router(
+                    routeInformationProvider:
+                        appRouter.routeInformationProvider,
                     debugShowCheckedModeBanner: false,
                     title: 'Flutter Demo',
                     // Add theme
