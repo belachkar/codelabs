@@ -44,7 +44,7 @@ class _MyAppState extends State<MyApp> {
                   title: 'Flutter Demo',
                   theme: theme.light(themeSettings.sourceColor),
                   darkTheme: theme.dark(themeSettings.sourceColor),
-                  themeMode: themeSettings.themeMode,
+                  themeMode: theme.themeMode(),
                   routeInformationProvider: appRouter.routeInformationProvider,
                   routeInformationParser: appRouter.routeInformationParser,
                   routerDelegate: appRouter.routerDelegate,

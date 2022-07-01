@@ -19,13 +19,17 @@ class OutlinedCard extends StatefulWidget {
 class _OutlinedCardState extends State<OutlinedCard> {
   @override
   Widget build(BuildContext context) {
+    final outlineColor = Theme.of(context).colorScheme.outline;
+
     return MouseRegion(
       cursor: widget.clickable
           ? SystemMouseCursors.click
           : SystemMouseCursors.basic,
       child: Container(
+        decoration: BoxDecoration(
+          border: Border.all(color: outlineColor, width: 1),
+        ),
         child: widget.child,
-        // Add box decoration here
       ),
     );
   }
