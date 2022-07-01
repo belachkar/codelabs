@@ -3,8 +3,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../shared/classes/classes.dart';
 import '../../../shared/extensions.dart';
-import '../../../shared/views/article_content.dart';
-import '../../../shared/views/image_clipper.dart';
+import '../../../shared/views/views.dart';
 import 'view.dart';
 
 class ArtistScreen extends StatelessWidget {

@@ -4,9 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../features/artists/artists.dart';
 import '../features/home/home.dart';
 import '../features/playlists/playlists.dart';
-import '../features/playlists/view/view.dart';
-import 'providers/artists.dart';
-import 'providers/playlists.dart';
+import 'providers/providers.dart';
 import 'views/views.dart';
 
 const _pageKey = ValueKey('_pageKey');

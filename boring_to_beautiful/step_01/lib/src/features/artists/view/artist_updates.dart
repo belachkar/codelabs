@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../shared/classes/classes.dart';
-import '../../../shared/views/outlined_card.dart';
+import '../../../shared/views/views.dart';
 
 class ArtistUpdates extends StatelessWidget {
   const ArtistUpdates({super.key, required this.artist});

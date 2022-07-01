@@ -5,7 +5,6 @@ import 'package:go_router/go_router.dart' as go;
 
 import '../playback/bloc/bloc.dart';
 import '../router.dart' as router;
-import 'adaptive_navigation.dart';
 import 'views.dart';
 
 class RootLayout extends StatelessWidget {

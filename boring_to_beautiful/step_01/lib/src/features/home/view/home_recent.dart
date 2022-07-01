@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../shared/classes/playlist.dart';
+import '../../../shared/classes/classes.dart';
 import '../../../shared/extensions.dart';
-import '../../../shared/views/clickable.dart';
-import '../../../shared/views/image_clipper.dart';
-import '../../../shared/views/outlined_card.dart';
+import '../../../shared/views/views.dart';
 
 class HomeRecent extends StatelessWidget {
   const HomeRecent(

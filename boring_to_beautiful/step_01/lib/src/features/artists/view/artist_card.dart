@@ -3,7 +3,6 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import '../../../shared/classes/classes.dart';
 import '../../../shared/extensions.dart';
-import '../../../shared/views/outlined_card.dart';
 import '../../../shared/views/views.dart';
 
 class ArtistCard extends StatelessWidget {

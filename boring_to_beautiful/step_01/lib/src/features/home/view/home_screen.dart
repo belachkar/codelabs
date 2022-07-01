@@ -5,7 +5,7 @@ import '../../../shared/classes/classes.dart';
 import '../../../shared/extensions.dart';
 import '../../../shared/providers/providers.dart';
 import '../../../shared/views/views.dart';
-import '../../playlists/view/playlist_songs.dart';
+import '../../playlists/playlists.dart';
 import 'view.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -16,14 +16,16 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  final PlaylistsProvider playlistProvider = PlaylistsProvider();
+  final ArtistsProvider artistsProvider = ArtistsProvider();
+
   @override
   Widget build(BuildContext context) {
-    final PlaylistsProvider playlistProvider = PlaylistsProvider();
     final List<Playlist> playlists = playlistProvider.playlists;
     final Playlist topSongs = playlistProvider.topSongs;
     final Playlist newReleases = playlistProvider.newReleases;
-    final ArtistsProvider artistsProvider = ArtistsProvider();
     final List<Artist> artists = artistsProvider.artists;
+
     return LayoutBuilder(
       builder: (context, constraints) {
         // Add conditional mobile layout
